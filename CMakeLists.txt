@@ -4,7 +4,7 @@ add_custom_command(OUTPUT ${pipeline_smoking_ocr_model}
 )
 add_custom_target(PipelineSmokingResource ALL
                   DEPENDS ${pipeline_smoking_ocr_model})
-set_target_properties(PipelineSmokingResource PROPERTIES FOLDER Testing)
+set_target_properties(PipelineSmokingResource PROPERTIES FOLDER TestingDataSet)
 
 install(
     DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/PipelineSmoking DESTINATION test
