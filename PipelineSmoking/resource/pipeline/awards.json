@@ -212,7 +212,7 @@
     "Sub_ObtainedJukeboxAwards": {
         "is_sub": true,
         "recognition": "OCR",
-        "text": [
+        "expected": [
             "获得",
             "物品"
         ],

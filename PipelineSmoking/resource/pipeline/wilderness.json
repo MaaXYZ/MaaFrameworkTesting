@@ -124,7 +124,7 @@
     },
     "TrustMax": {
         "recognition": "OCR",
-        "text": [
+        "expected": [
             "MAX"
         ],
         "roi": [
