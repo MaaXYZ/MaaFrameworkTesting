@@ -2,35 +2,34 @@
     "StartUp": {
         "next": [
             "HomeFlag",
-            "Sub_HomeButton",
-            "Sub_BackButton",
-            "Sub_HomeLoading",
-            "Sub_ObtainedAwards",
-            "Sub_AccumulatedSignIn",
-            "Sub_BirthdayReward",
-            "Sub_Reward",
-            "Sub_CloseDuringFestivalDipaRewardPage",
+            "[JumpBack]Sub_HomeButton",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_HomeLoading",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_AccumulatedSignIn",
+            "[JumpBack]Sub_BirthdayReward",
+            "[JumpBack]Sub_Reward",
+            "[JumpBack]Sub_CloseDuringFestivalDipaRewardPage",
             "StartGame",
             "CloseAnnouncement",
             "Download",
             "GameLoading",
             "BluePochLogo",
             "Disclaimer",
-            "Sub_Start1999"
+            "[JumpBack]Sub_Start1999"
         ]
     },
     "Sub_StartUp": {
-        "is_sub": true,
         "next": [
             "HomeFlag",
-            "Sub_HomeButton",
-            "Sub_BackButton",
-            "Sub_HomeLoading",
-            "Sub_ObtainedAwards",
-            "Sub_AccumulatedSignIn",
-            "Sub_BirthdayReward",
-            "Sub_Reward",
-            "Sub_CloseDuringFestivalDipaRewardPage",
+            "[JumpBack]Sub_HomeButton",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_HomeLoading",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_AccumulatedSignIn",
+            "[JumpBack]Sub_BirthdayReward",
+            "[JumpBack]Sub_Reward",
+            "[JumpBack]Sub_CloseDuringFestivalDipaRewardPage",
             "StartGame",
             "CloseAnnouncement",
             "Download",
@@ -41,7 +40,6 @@
         ]
     },
     "Sub_Start1999": {
-        "is_sub": true,
         "action": "StartApp",
         "package_doc": "set in code."
     },
@@ -127,7 +125,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_HomeLoading",
+            "[JumpBack]Sub_HomeLoading",
             "HomeFlag",
             "StartGame",
             "CloseAnnouncement"
@@ -144,20 +142,19 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_BackButton",
-            "Sub_ObtainedAwards",
-            "Sub_AccumulatedSignIn",
-            "Sub_BirthdayReward",
-            "Sub_Reward",
-            "Sub_HomeLoading",
-            "Sub_CloseDuringFestivalDipaRewardPage",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_AccumulatedSignIn",
+            "[JumpBack]Sub_BirthdayReward",
+            "[JumpBack]Sub_Reward",
+            "[JumpBack]Sub_HomeLoading",
+            "[JumpBack]Sub_CloseDuringFestivalDipaRewardPage",
             "HomeFlag",
             "StartGame",
             "CloseAnnouncement"
         ]
     },
     "Sub_HomeLoading": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/HomeLoading.png",
         "roi": [
@@ -178,7 +175,6 @@
         ]
     },
     "Sub_BackButton": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": [
             "StartUp/BackButton.png",
@@ -193,7 +189,6 @@
         "action": "Click"
     },
     "Sub_HomeButton": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": [
             "StartUp/HomeButton.png",
@@ -209,7 +204,6 @@
     },
     "Stop": {},
     "Sub_Reward": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/Reward.png",
         "roi": [
@@ -227,7 +221,6 @@
         ]
     },
     "Sub_AccumulatedSignIn": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/AccumulatedSignIn.png",
         "roi": [
@@ -239,7 +232,6 @@
         "action": "Click"
     },
     "Sub_BirthdayReward": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/BirthdayReward.png",
         "threshold": 0.8,
@@ -252,7 +244,6 @@
         "action": "Click"
     },
     "Sub_CloseDuringFestivalDipaRewardPage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/CloseDuringFestivalDipaRewardPage.png",
         "roi": [
