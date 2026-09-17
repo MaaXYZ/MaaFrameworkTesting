@@ -1,5 +1,4 @@
 {"cost": 534, "success": true, "type": "connect", "uuid": "123456", "version": "v1.2.0", "timestamp": 567892874310300, "width": 1280, "height": 720}
-{"cost": 1293, "path": "Screenshot/2023.10.25-23.45.27.1022502.png", "success": true, "type": "screencap", "timestamp": 567893418258600}
 {"cost": 519, "path": "Screenshot/2023.10.25-23.45.28.3289226.png", "success": true, "type": "screencap", "timestamp": 567895418893400}
 {"cost": 502, "path": "Screenshot/2023.10.25-23.45.29.9700669.png", "success": true, "type": "screencap", "timestamp": 567897077505400}
 {"cost": 0, "success": true, "type": "click", "x": 1276, "y": 1080, "timestamp": 567898419923100}
