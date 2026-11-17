@@ -1,0 +1,540 @@
+{
+    "version": 1,
+    "cases": [
+        {
+            "id": "1448-hbr-august-fullscreen",
+            "image": "images/1448-hbr-2026-08.png",
+            "image_sha256": "f4f087898f843e2942587c9b09fd31f67d9e74afe2830d0696b95cbc5392d97f",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1448",
+            "source_image": "https://github.com/user-attachments/assets/8d2341fc-f7a8-4c0f-bfb8-4252e53943ac",
+            "recognition": {
+                "roi": [
+                    1102,
+                    186,
+                    178,
+                    150
+                ],
+                "expected": [
+                    "战斗"
+                ],
+                "threshold": 0.9
+            },
+            "peers": [
+                {}
+            ],
+            "notes": "Original report screenshot and SelectArtsBattleNormal ROI. The full-screen peer is ClickScreen. Threshold 0.9 preserves the existing MaaFramework regression assertion; the report supplies the target text and ROI."
+        },
+        {
+            "id": "1448-hbr-august-below-limit",
+            "image": "images/1448-hbr-2026-08.png",
+            "image_sha256": "f4f087898f843e2942587c9b09fd31f67d9e74afe2830d0696b95cbc5392d97f",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1448",
+            "source_image": "https://github.com/user-attachments/assets/8d2341fc-f7a8-4c0f-bfb8-4252e53943ac",
+            "recognition": {
+                "roi": [
+                    1102,
+                    186,
+                    178,
+                    150
+                ],
+                "expected": [
+                    "战斗"
+                ],
+                "threshold": 0.9
+            },
+            "peers": [
+                {
+                    "roi": [
+                        400,
+                        0,
+                        880,
+                        720
+                    ]
+                }
+            ],
+            "notes": "Derived regression: the target ROI, expected text, and threshold are unchanged from the August #1448 case. The peer ROI is a test-derived configuration, not a parameter reported in the issue. Its union with the target stays below the detector's 960-pixel maximum-side limit, yet merging still changes detection context, boxes, and scores in the old clustering implementation."
+        },
+        {
+            "id": "1448-hbr-august-nearby",
+            "image": "images/1448-hbr-2026-08.png",
+            "image_sha256": "f4f087898f843e2942587c9b09fd31f67d9e74afe2830d0696b95cbc5392d97f",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1448",
+            "source_image": "https://github.com/user-attachments/assets/8d2341fc-f7a8-4c0f-bfb8-4252e53943ac",
+            "recognition": {
+                "roi": [
+                    1102,
+                    186,
+                    178,
+                    150
+                ],
+                "expected": [
+                    "战斗"
+                ],
+                "threshold": 0.9
+            },
+            "peers": [
+                {
+                    "roi": [
+                        1000,
+                        180,
+                        280,
+                        160
+                    ]
+                }
+            ],
+            "notes": "Derived regression: the target ROI, expected text, and threshold are unchanged from the August #1448 case. The peer ROI is a test-derived configuration, not a parameter reported in the issue. Its union with the target stays below the detector's 960-pixel maximum-side limit, yet merging still changes detection context, boxes, and scores in the old clustering implementation."
+        },
+        {
+            "id": "1448-hbr-november-fullscreen",
+            "image": "images/1448-hbr-2026-11.png",
+            "image_sha256": "d0ab2edc8cdb67a28e010f25a5c7edce63779ad44864a5cf2d074ee034f56a26",
+            "original_size": [
+                2560,
+                1440
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1448#issuecomment-6829542455",
+            "source_image": "https://github.com/user-attachments/assets/4914bcf6-af32-465b-86e2-b47eca293260",
+            "recognition": {
+                "roi": [
+                    1102,
+                    186,
+                    178,
+                    150
+                ],
+                "expected": [
+                    "战斗"
+                ],
+                "threshold": 0.9
+            },
+            "peers": [
+                {}
+            ],
+            "notes": "Follow-up screenshot for v5.16.0. Preserve the 2560x1440 PNG; resize to 1280x720 before applying the reported ROI. Threshold 0.9 matches the August regression case."
+        },
+        {
+            "id": "1148-bounty-fullscreen",
+            "image": "images/1148-bounty.png",
+            "image_sha256": "522e1e6261d6b89252422bafca6672dfcb9c32329784ac0b995d71065d963d7b",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1148",
+            "source_image": "https://github.com/user-attachments/assets/a0e3fb58-3164-4a8c-94fe-ac92140848d2",
+            "recognition": {
+                "roi": [
+                    1191,
+                    116,
+                    50,
+                    580
+                ],
+                "expected": [
+                    "悬赏"
+                ]
+            },
+            "peers": [
+                {}
+            ],
+            "notes": "First source pipeline: B searches the narrow ROI and C performs full-screen OCR. Model and threshold were omitted in the source."
+        },
+        {
+            "id": "1148-bounty-shared-roi",
+            "image": "images/1148-bounty.png",
+            "image_sha256": "522e1e6261d6b89252422bafca6672dfcb9c32329784ac0b995d71065d963d7b",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1148",
+            "source_image": "https://github.com/user-attachments/assets/a0e3fb58-3164-4a8c-94fe-ac92140848d2",
+            "recognition": {
+                "roi": [
+                    1191,
+                    116,
+                    50,
+                    580
+                ],
+                "expected": [
+                    "悬赏"
+                ]
+            },
+            "peers": [
+                {
+                    "roi": [
+                        1191,
+                        116,
+                        50,
+                        580
+                    ]
+                }
+            ],
+            "notes": "Second source pipeline: C uses exactly the same ROI as B. Model and threshold were omitted in the source."
+        },
+        {
+            "id": "1384-purchase-small-roi",
+            "image": "images/1384-purchase.png",
+            "image_sha256": "210198b47014ae2896f3439b6a1d590ce106c712f15b445fa7a2fbc8a95f5e12",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1384",
+            "source_image": "https://github.com/user-attachments/assets/375629d8-17fb-4fa0-abfd-752f97bf8172",
+            "recognition": {
+                "roi": [
+                    633,
+                    589,
+                    36,
+                    29
+                ],
+                "expected": [
+                    "12",
+                    "16"
+                ]
+            },
+            "peers": [
+                {
+                    "roi": [
+                        217,
+                        135,
+                        846,
+                        394
+                    ],
+                    "expected": [
+                        "12",
+                        "16"
+                    ]
+                }
+            ],
+            "notes": "The source reports that each node succeeds alone, but the small node fails when both are candidates. The source specifies OCR v4 and omits threshold."
+        },
+        {
+            "id": "1384-purchase-large-roi",
+            "image": "images/1384-purchase.png",
+            "image_sha256": "210198b47014ae2896f3439b6a1d590ce106c712f15b445fa7a2fbc8a95f5e12",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1384",
+            "source_image": "https://github.com/user-attachments/assets/375629d8-17fb-4fa0-abfd-752f97bf8172",
+            "recognition": {
+                "roi": [
+                    217,
+                    135,
+                    846,
+                    394
+                ],
+                "expected": [
+                    "12",
+                    "16"
+                ]
+            },
+            "peers": [
+                {
+                    "roi": [
+                        633,
+                        589,
+                        36,
+                        29
+                    ],
+                    "expected": [
+                        "12",
+                        "16"
+                    ]
+                }
+            ],
+            "notes": "Reverse target of the same reported pair, preserving the larger node as a positive control. The source specifies OCR v4 and omits threshold."
+        },
+        {
+            "id": "1137-delivery-science-park",
+            "image": "images/1137-delivery.png",
+            "image_sha256": "565fcca3b0b7404f0de30ba155bf7f0ec02c96e179c555a4887869e250ba4e69",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1137",
+            "source_image": "https://github.com/user-attachments/assets/0908b323-72f0-4f89-b4f8-de94beddefb6",
+            "recognition": {
+                "roi": [
+                    67,
+                    224,
+                    1006,
+                    95
+                ],
+                "expected": [
+                    "源石研究园",
+                    "源石研究園",
+                    "Originium Science Park",
+                    "源石研究パーク",
+                    "오리지늄 연구 구역"
+                ],
+                "order_by": "Expected"
+            },
+            "peers": [
+                {
+                    "roi": [
+                        79,
+                        550,
+                        985,
+                        89
+                    ],
+                    "expected": [
+                        "查看任务",
+                        "查看任務",
+                        "Check Mission",
+                        "任務確認",
+                        "임무 확인"
+                    ],
+                    "order_by": "Expected"
+                },
+                {
+                    "roi": [
+                        67,
+                        224,
+                        1006,
+                        95
+                    ],
+                    "expected": [
+                        "矿脉源区",
+                        "礦脈源區",
+                        "Origin Lodespring",
+                        "鉱山エリア",
+                        "광맥 구역"
+                    ],
+                    "order_by": "Expected"
+                },
+                {
+                    "roi": [
+                        67,
+                        224,
+                        1006,
+                        95
+                    ],
+                    "expected": [
+                        "供能高地",
+                        "供能高地",
+                        "Power Plateau",
+                        "エネルギー高地",
+                        "에너지 공급 고지"
+                    ],
+                    "order_by": "Expected"
+                }
+            ],
+            "notes": "Fixed-ROI portion of the source pipeline. Retain its multilingual expected list and Expected ordering. Dynamic cargo ROI references and their offsets are not represented by this case. Model and threshold were omitted in the source."
+        },
+        {
+            "id": "1137-delivery-lodespring",
+            "image": "images/1137-delivery.png",
+            "image_sha256": "565fcca3b0b7404f0de30ba155bf7f0ec02c96e179c555a4887869e250ba4e69",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1137",
+            "source_image": "https://github.com/user-attachments/assets/0908b323-72f0-4f89-b4f8-de94beddefb6",
+            "recognition": {
+                "roi": [
+                    67,
+                    224,
+                    1006,
+                    95
+                ],
+                "expected": [
+                    "矿脉源区",
+                    "礦脈源區",
+                    "Origin Lodespring",
+                    "鉱山エリア",
+                    "광맥 구역"
+                ],
+                "order_by": "Expected"
+            },
+            "peers": [
+                {
+                    "roi": [
+                        79,
+                        550,
+                        985,
+                        89
+                    ],
+                    "expected": [
+                        "查看任务",
+                        "查看任務",
+                        "Check Mission",
+                        "任務確認",
+                        "임무 확인"
+                    ],
+                    "order_by": "Expected"
+                },
+                {
+                    "roi": [
+                        67,
+                        224,
+                        1006,
+                        95
+                    ],
+                    "expected": [
+                        "源石研究园",
+                        "源石研究園",
+                        "Originium Science Park",
+                        "源石研究パーク",
+                        "오리지늄 연구 구역"
+                    ],
+                    "order_by": "Expected"
+                },
+                {
+                    "roi": [
+                        67,
+                        224,
+                        1006,
+                        95
+                    ],
+                    "expected": [
+                        "供能高地",
+                        "供能高地",
+                        "Power Plateau",
+                        "エネルギー高地",
+                        "에너지 공급 고지"
+                    ],
+                    "order_by": "Expected"
+                }
+            ],
+            "notes": "Fixed-ROI portion of the source pipeline. Retain its multilingual expected list and Expected ordering. Dynamic cargo ROI references and their offsets are not represented by this case. Model and threshold were omitted in the source."
+        },
+        {
+            "id": "1137-delivery-power-plateau",
+            "image": "images/1137-delivery.png",
+            "image_sha256": "565fcca3b0b7404f0de30ba155bf7f0ec02c96e179c555a4887869e250ba4e69",
+            "original_size": [
+                1280,
+                720
+            ],
+            "image_size": [
+                1280,
+                720
+            ],
+            "source": "https://github.com/MaaXYZ/MaaFramework/issues/1137",
+            "source_image": "https://github.com/user-attachments/assets/0908b323-72f0-4f89-b4f8-de94beddefb6",
+            "recognition": {
+                "roi": [
+                    67,
+                    224,
+                    1006,
+                    95
+                ],
+                "expected": [
+                    "供能高地",
+                    "供能高地",
+                    "Power Plateau",
+                    "エネルギー高地",
+                    "에너지 공급 고지"
+                ],
+                "order_by": "Expected"
+            },
+            "peers": [
+                {
+                    "roi": [
+                        79,
+                        550,
+                        985,
+                        89
+                    ],
+                    "expected": [
+                        "查看任务",
+                        "查看任務",
+                        "Check Mission",
+                        "任務確認",
+                        "임무 확인"
+                    ],
+                    "order_by": "Expected"
+                },
+                {
+                    "roi": [
+                        67,
+                        224,
+                        1006,
+                        95
+                    ],
+                    "expected": [
+                        "源石研究园",
+                        "源石研究園",
+                        "Originium Science Park",
+                        "源石研究パーク",
+                        "오리지늄 연구 구역"
+                    ],
+                    "order_by": "Expected"
+                },
+                {
+                    "roi": [
+                        67,
+                        224,
+                        1006,
+                        95
+                    ],
+                    "expected": [
+                        "矿脉源区",
+                        "礦脈源區",
+                        "Origin Lodespring",
+                        "鉱山エリア",
+                        "광맥 구역"
+                    ],
+                    "order_by": "Expected"
+                }
+            ],
+            "notes": "Fixed-ROI portion of the source pipeline. Retain its multilingual expected list and Expected ordering. Dynamic cargo ROI references and their offsets are not represented by this case. Model and threshold were omitted in the source."
+        }
+    ]
+}
